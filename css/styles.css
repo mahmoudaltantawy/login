@@ -1,8 +1,10 @@
 body{
     background: url('../images/image1.jpg') fixed center center no-repeat;
     background-size: cover;
+    background-repeat-y:no-repeat !important; 
     height: 100%;
     font-family: 'Lato', sans-serif;
+
 }
 
 
@@ -29,17 +31,19 @@ height: 2px;
     background: #FFF;
 }
 .container form{
-    margin-top: 50%;
+    margin-top: 45%;
      background: #463C40;
     z-index: 999;
     color: #FFF;
-    transition: all 0.2s ease-in-out;
-    padding: 5%;
+    transition: all 0.3s ease-in-out;
+    padding: 4%;
     border-radius: 10px;
+    width: 100%;
 }
 .container form:hover{
-    background: #2B2B2B;border-radius: 10px;  cursor: pointer;
+    background: #252525;border-radius: 10px;  cursor: pointer;width: 95%;
 }
+.container form:hover h2:after{background: #60A14A; height: 1px;}
 
 i{color: #4DDA4C}
 .container form .form-group input{
